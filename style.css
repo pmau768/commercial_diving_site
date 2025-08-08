@@ -1,0 +1,120 @@
+
+body {
+    background-color: #0A1B26;
+    color: #E5E1DA;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0A1B26;
+}
+.logo {
+    height: 50px;
+}
+.cta-btn {
+    background-color: #B35423;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+.service-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+.about img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.gallery img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0A1B26;
+    color: #E5E1DA;
+    border-top: 1px solid #B35423;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery img {
+        max-width: 90%;
+    }
+    .hero {
+        padding: 30px 15px;
+    }
+    .cta-btn {
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
